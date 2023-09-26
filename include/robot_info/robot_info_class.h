@@ -4,13 +4,14 @@
 #include <ros/ros.h>
 
 class RobotInfo {
-protected:
+private:
   // Robot info
   std::string robot_description;
   std::string serial_number;
   std::string ip_address;
   std::string firmware_version;
 
+protected:
   // ROS publisher
   ros::Publisher robot_info_pub;
   robotinfo_msgs::RobotInfo10Fields robot_info_msg;
