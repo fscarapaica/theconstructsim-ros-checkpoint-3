@@ -7,10 +7,10 @@ int main(int argc, char **argv) {
   ros::NodeHandle nh;
   RobotInfo robot_info = RobotInfo(
   &nh,
-  "This is my description",
-  "ABC-DEF-GHI",
-  "192.169.1.1",
-  "ver_2.0.1-dev"
+  "Mir100",
+  "567A359",
+  "169.254.5.180",
+  "3.5.8"
   );
   robot_info.publish_data();
   ros::spin();

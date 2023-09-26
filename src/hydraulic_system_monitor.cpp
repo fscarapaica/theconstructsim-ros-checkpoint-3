@@ -11,7 +11,7 @@ HydraulicSystemMonitor::HydraulicSystemMonitor(
   this->hydraulic_oil_pressure = hydraulic_oil_pressure;
 }
 
-std::map<std::string, std::string> HydraulicSystemMonitor::getHydraulicMonitorMagnitudes() {
+std::vector<std::pair<std::string, std::string>> HydraulicSystemMonitor::getHydraulicMonitorMagnitudes() {
   return {{"hydraulic_oil_temperature", hydraulic_oil_temperature},
           {"hydraulic_oil_tank_fill_level", hydraulic_oil_tank_fill_level},
           {"hydraulic_oil_pressure", hydraulic_oil_pressure}};

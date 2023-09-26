@@ -33,7 +33,7 @@ void RobotInfo::publish_data() {
   generate_robot_info_msg();
   
   ros::Rate loop_rate(1); // Set a publish rate of 2 Hz
-  while (true) {
+  while (ros::ok()) {
     robot_info_pub.publish(robot_info_msg);
     ros::spinOnce();
     loop_rate.sleep(); // Make sure the publish rate maintains at 2 Hz

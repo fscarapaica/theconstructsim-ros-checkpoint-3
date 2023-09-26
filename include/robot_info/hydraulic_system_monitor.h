@@ -1,6 +1,6 @@
 #pragma once
-#include <map>
 #include <string>
+#include <vector>
 
 class HydraulicSystemMonitor {
 private:
@@ -14,5 +14,5 @@ public:
                          std::string hydraulic_oil_tank_fill_level,
                          std::string hydraulic_oil_pressure);
 
-  std::map<std::string, std::string> getHydraulicMonitorMagnitudes();
+  std::vector<std::pair<std::string, std::string>> getHydraulicMonitorMagnitudes();
 };
